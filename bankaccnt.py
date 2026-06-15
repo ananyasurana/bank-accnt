@@ -29,9 +29,7 @@ class BankAccount:
                 ("Opening deposit", initial_balance, self.__balance)
             )
 
-    # ------------------------------------------------------------------
     # Public methods
-    # ------------------------------------------------------------------
 
     def deposit(self, amount: float, description: str = "Deposit") -> None:
         """
@@ -99,9 +97,7 @@ class BankAccount:
         self.withdraw(amount)
         target_account.deposit(amount, description="Transfer in")
 
-    # ------------------------------------------------------------------
     # Property
-    # ------------------------------------------------------------------
 
     @property
     def owner(self) -> str:
